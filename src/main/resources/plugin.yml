@@ -1,0 +1,13 @@
+name: DeathSwap-Plugin
+version: 1.0
+api-version: 1.13
+author: TheRedCubey
+
+depend: [ProtocolLib, PacketWrapper]
+
+main: main.Main
+commands:
+  deathSwap:
+      aliases:
+        - ds
+      description: Death Swap command. Extensions such as invite after command for different actions.
