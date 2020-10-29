@@ -11,3 +11,7 @@ commands:
       aliases:
         - ds
       description: Death Swap command. Extensions such as invite after command for different actions.
+  forceDeathSwap:
+    aliases:
+      - fds
+    description: Forces a Death Swap immediately. Used for example when the server is lagging.

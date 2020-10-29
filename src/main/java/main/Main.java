@@ -1,6 +1,7 @@
 package main;
 
 import commands.CommandListener;
+import commands.ForceSwapCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -16,6 +17,9 @@ public class Main extends JavaPlugin {
     private void registerCommands() {
         getCommand("ds").setExecutor(new CommandListener());
         getCommand("deathSwap").setExecutor(new CommandListener());
+
+        getCommand("forceDeathSwap").setExecutor(new ForceSwapCommand());
+        getCommand("fds").setExecutor(new ForceSwapCommand());
     }
 
 }

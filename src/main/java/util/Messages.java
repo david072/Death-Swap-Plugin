@@ -35,6 +35,8 @@ public class Messages {
 
     public static final String SWAP_SWAPPING_IN = "§eSwapping in §c%seconds%§e!";
     public static final String SWAP_SWAPPNG_NOW = "§cSwapping now...";
+
+    public static final String SWAP_FORCED = "§b%forcer% §eforced a swap!";
     // ---------------------------
 
 }
