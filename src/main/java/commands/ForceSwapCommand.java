@@ -14,6 +14,9 @@ public class ForceSwapCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {
             Player player = (Player) sender;
+
+            if(DeathSwap.swaps.isEmpty()) return true;
+
             Bukkit.broadcastMessage(Messages.SWAP_FORCED.replace("%forcer%", player.getDisplayName()));
             DeathSwap.tenSecCountdown();
         }

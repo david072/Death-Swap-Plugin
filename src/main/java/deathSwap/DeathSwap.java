@@ -55,6 +55,8 @@ public class DeathSwap {
     }
 
     public static void swapPlayers() {
+        boolean ran = false;
+
         for(Swap swap : swaps) {
             if(!swap.getPlayer1().isOnline()) {
                 swap.getPlayer2().sendMessage(Messages.SWAP_PLAYER_DISCONNECTED.replace("%otherPlayer%", swap.getPlayer1().getDisplayName()));
@@ -66,8 +68,10 @@ public class DeathSwap {
             }
 
             swap.swap();
+            ran = true;
         }
 
+        if(!ran) return;
         startSwapping();
     }
 
